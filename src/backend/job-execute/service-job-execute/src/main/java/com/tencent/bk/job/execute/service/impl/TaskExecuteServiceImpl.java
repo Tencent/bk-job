@@ -1194,6 +1194,7 @@ public class TaskExecuteServiceImpl implements TaskExecuteService {
         taskInstance.setCurrentStepId(-1L);
         taskInstance.setDebugTask(taskPlan.getDebugTask());
         taskInstance.setCallbackUrl(executeParam.getCallbackUrl());
+        taskInstance.setCallback(executeParam.getCallback());
         taskInstance.setAppCode(executeParam.getAppCode());
         return taskInstance;
     }
